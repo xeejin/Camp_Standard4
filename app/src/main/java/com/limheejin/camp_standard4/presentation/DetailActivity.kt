@@ -11,7 +11,9 @@ import com.limheejin.camp_standard4.databinding.ActivityDetailBinding
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
-
+//    companion object {
+//        const val EXTRA_CARD: String = "extra_card"
+//    }
 
     private val selectedCard by lazy {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
@@ -32,5 +34,9 @@ class DetailActivity : AppCompatActivity() {
             binding.tvExpDate.text = it.expDate
             binding.tvPrice.text = priceDecimal(it.price)
         }
+
+//        val cardItem = intent.getParcelableArrayExtra<Card>(EXTRA_CARD)
+//
+//        cardItem?.name 등등
     }
 }

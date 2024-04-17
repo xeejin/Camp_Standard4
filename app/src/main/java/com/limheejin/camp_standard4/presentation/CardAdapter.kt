@@ -42,38 +42,33 @@ class CardAdapter(private val cardItems: List<CardData>) : // 어댑터 객체�
        //포지션은 리스트에서 어느 위치에 있는지
 
         var currentItem = cardItems[position]
-
-            holder.itemView.setOnClickListener {
-            itemClick?.onClick(it,position)
-        }
-
         when(holder.itemViewType){
             TYPE_1 -> {
-                (holder as MultiViewHolder1).bind(cardItems[position])
                 val viewHolder = holder as MultiViewHolder1
                 viewHolder.bind(currentItem)
+//                holder.itemView.setOnClickListener {
+//                    onClick(currentItem)
+//                }
             }
             TYPE_2 -> {
-                (holder as MultiViewHolder2).bind(cardItems[position])
                 val viewHolder = holder as MultiViewHolder2
                 viewHolder.bind(currentItem)
             }
             TYPE_3 -> {
-                (holder as MultiViewHolder3).bind(cardItems[position])
                 val viewHolder = holder as MultiViewHolder3
                 viewHolder.bind(currentItem)
             }
         }
     }
 
-    override fun getItemViewType(position: Int): Int {
-        return when(position)
-        {
+    override fun getItemViewType(position: Int): Int { // position마다 어떤 뷰타입을 가지고 있는지 연결해줘야 함
+        return when (position) {
             0 -> TYPE_1
             1 -> TYPE_2
             2 -> TYPE_3
             else -> {
-                TYPE_1}
+                throw IllegalAccessException("ERROR")
+            }
         }
     }
 
