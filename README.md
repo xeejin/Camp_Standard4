@@ -1,4 +1,4 @@
-# :iphone: 스탠다드반 4주차 RecyclerView 과제
+# :iphone: 스탠다드반 4주차 RecyclerView : MultiView Type
 
 <br/>
 
@@ -12,8 +12,9 @@
 
 ## :tada: 공부할 지식
 - RecyclerView
+- MultiView Type 구현
 - Singleton Pattern
-- Bundle
+- Bundle로 데이터 전송
 
 <br/>
 
