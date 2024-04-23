@@ -23,4 +23,6 @@
 - [ ]  뷰홀더 내에 구현되어 있는 OnclickListener를 메인 액티비티로 옮기기
 - [ ]  ```val context = binding.root.context``` 안티 패턴 수정하기
 - [ ]  어댑터 내부 코드 수정
+- [ ]  MVVM 패턴으로 수정하기 : ViewModel로 Data 처리 로직 관리하기
+- [ ]  MVVM 패턴으로 수정하기 : ViewModel로부터 Data를 받아와서 Activity에서 사용하기
 

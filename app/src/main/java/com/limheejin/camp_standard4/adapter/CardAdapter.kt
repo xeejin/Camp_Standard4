@@ -1,4 +1,4 @@
-package com.limheejin.camp_standard4.presentation
+package com.limheejin.camp_standard4.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -10,6 +10,10 @@ import com.limheejin.camp_standard4.data.priceDecimal
 import com.limheejin.camp_standard4.databinding.ItemCard1Binding
 import com.limheejin.camp_standard4.databinding.ItemCard2Binding
 import com.limheejin.camp_standard4.databinding.ItemCard3Binding
+import com.limheejin.camp_standard4.presentation.DetailActivity
+import com.limheejin.camp_standard4.presentation.TYPE_1
+import com.limheejin.camp_standard4.presentation.TYPE_2
+import com.limheejin.camp_standard4.presentation.TYPE_3
 
 class CardAdapter(private val cardItems: List<CardData>) : // 어댑터 객체를 생성할 때, 만들어놓은 데이터 클래스를 인수로 받아줌
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {  // RecyclerView.Adapter<아래에 만들 뷰홀더 클래스>를 상속 (뷰홀더 패턴으로 구현)

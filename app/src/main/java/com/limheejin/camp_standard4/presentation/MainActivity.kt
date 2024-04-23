@@ -1,10 +1,9 @@
 package com.limheejin.camp_standard4.presentation
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.limheejin.camp_standard4.data.CardData
+import com.limheejin.camp_standard4.adapter.CardAdapter
 import com.limheejin.camp_standard4.data.CardList
 import com.limheejin.camp_standard4.databinding.ActivityMainBinding
 
